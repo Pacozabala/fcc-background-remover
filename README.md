@@ -1,7 +1,6 @@
 # Background Remover
 A simple web application for removing image backgrounds. The frontend submits an image to a FastAPI backend, which returns a PNG with the background removed.
 
-Based on FreeCodeCamp's tutorial: [How to Go From Hello World to Building Real-World Applications](https://www.freecodecamp.org/news/how-to-go-from-hello-world-to-building-real-world-applications/)
 Additional backend logic added (CORS, fastapi Response) to allow full functionality.
 
 This project is based on the freeCodeCamp tutorial, [How to Go From Hello World to Building Real-World Applications](https://www.freecodecamp.org/news/how-to-go-from-hello-world-to-building-real-world-applications/).

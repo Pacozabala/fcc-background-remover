@@ -34,3 +34,14 @@ curl -X POST -F "file=@test_photo.webp" http://localhost:8000/remove-bg --output
 ## Model
 
 The application uses the `u2net.onnx` model from the [`rembg` project](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx).
+
+
+## Vercel Deployment
+
+The project is configured for vercel with:
+- static frontend files served from repo root;
+- Python FastAPI entrpoiny at `api/index.py`;
+- root `requirements.txt` for Vercel dependency installation;
+- rewrites from `/remove-bg` and `/health` to the FastAPI function.
+
+For local development, keep running the backend on `http://localhost:8000`; in production, frontend calls the same-origin `/remove-bg` endpoint.

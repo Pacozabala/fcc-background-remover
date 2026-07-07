@@ -34,3 +34,5 @@ curl -X POST -F "file=@test_photo.webp" http://localhost:8000/remove-bg --output
 ## Model
 
 The application uses the `u2net.onnx` model from the [`rembg` project](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx).
+
+(This message is written to indictae successful transfer of repository ownership)
